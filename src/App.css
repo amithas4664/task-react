@@ -1,38 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 .App {
   text-align: center;
+  background-color: #000000;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ant-layout-content {
+  max-width: 1415px;
+  width: 100%;
+  margin: auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.closeBtnWrap{
+  cursor:  pointer;
+  position: relative;
 }
+.close-btn{
+	position: absolute;
+  right: 25px;
+	transition: transform .25s, opacity .25s;
+	opacity: 1;
+	cursor: pointer;
+	font-size: 4em;
+  color: #fff;
+	font-family: serif;
+	line-height: 1;
+}
+.close-btn:before{
+	content: "\d7";
+}
+.close-btn:hover{
+	opacity: 0.8;
+	transform: rotate(90deg);
+}
+.hero-section{
+  padding-top: 135px;
+}
+.hero-section .img-wrapper{
+  margin: 50px 0;
+}
+.hero-section h2{
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 55px;
+  
+}
+.hero-section .primary-btn{
+  width: 415px;
+}
+.secondary-btn{
+  font-family: 'Poppins';
+font-size: 18px;
+color: #fff;
+font-weight: 500;
+height: 60px;
+line-height: 27px;
+border-radius: 0;
+letter-spacing: 0.9599999785423279px;
+text-align: center;
+border: 1px solid #fff;
+padding: 16px;
+width: 373px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.primary-btn{
+  font-family: 'Poppins';
+  font-size: 19px;
+  border-radius: 0;
+  color: #000000;
+  height: 60px;
+  background-color: #FFFFFF;
+  padding: 15px 0;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0.9599999785423279px;
+  text-align: center;
+
+}
+.contactWrapper .primary-btn{
+  width: 373px;
+}
+.primary-btn:hover{
+  border: 1px solid #fff;
+  background: transparent !important;
+  color: #000;
+}
+.secondary-btn:hover{
+  border-color: transparent;
+  color: #000;
+  background-color: #fff;
+}
+.hero-section h1{
+  font-family: "Roboto", sans-serif;
+  font-size: 45px;
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: 200;
+  line-height: 48px;
+  letter-spacing: 0.9599999785423279px;
+  text-align: center;
+  
+}
+.hero-section img{
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.cardWrapper{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100%;
+}
+.card {
+  overflow: hidden;
+  margin: 10px;
+  width: 347px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+  width: 100%;
+  height:  347px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 16px;
+}
+.card-content p{
   color: white;
+  font-size: 19px;
+  font-weight: 300;
+}
+.contributionWrapper{
+   max-width: 935px;
+   margin: auto;
+}
+.contributionWrapper h2{
+  color: #fff;
+  font-family: 'Roboto';
+  font-size: 42px;
+  font-weight: 200;
+  line-height: 48px;
+  letter-spacing: 0px;
+}
+.contributionWrapper p{
+  color: #fff;
+  font-family: 'Poppins';
+font-size: 18px;
+font-weight: 400;
+line-height: 27px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+.customCount{
+   margin-top: 107px;
+} 
+.customCount .counter{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+}
+.customCount .counter div{
+  text-align: center;
+  width: 33%;
+}
+.customCount .counter p{
+  color: #fff;
+  font-family: 'Roboto';
+font-size: 25px;
+font-weight: 300;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+.customCount h5{
+  font-family: 'Roboto';
+font-size: 80px;
+font-weight: 200;
+line-height: 18px;
+color: #fff;
+letter-spacing: 0em;
+ margin: 0;
+ padding-bottom: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.contactWrapper h2{
+  font-family: 'Roboto';
+  color: #fff;
+font-size: 45px;
+font-weight: 300;
+line-height: 48px;
+letter-spacing: 0.9599999785423279px;
+
+}
+.contactWrapper p{
+  color: #fff;
+  font-family: 'Roboto';
+font-size: 28px;
+font-weight: 300;
+line-height: 33px;
+letter-spacing: 0em;
+margin: 0;
+text-align: center;
+}
+.contactWrapper p span{
+  font-family: Roboto;
+font-size: 28px;
+font-weight: 500;
+line-height: 33px;
+letter-spacing: 0em;
+text-align: center;
+}
+.contactWrapper .btnWrapper{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 85px;
+}
+.ant-space-item{
+    padding-bottom: 190px;
+}
+.ant-layout-footer{
+  background: #000000;
+}
+footer p{
+  color: white;
+  font-family: 'Roboto';
+font-size: 19px;
+font-weight: 300;
+line-height: 26px;
+letter-spacing: 0em;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Media queries */
+@media (max-width : 1199.9px){
+  .cardWrapper{
+      flex-wrap: wrap;
   }
-  to {
-    transform: rotate(360deg);
+  .card{
+    width: 40%;
+  }
+  .customCount .counter p{
+
+  font-size: 20px;
+  
+  }
+  .customCount h5{
+  font-size: 40px;
+
+  }
+  .contactWrapper .primary-btn , .contactWrapper .secondary-btn{
+    width: auto;
+    padding: 14px;
+  }
+  
+}
+@media (max-width : 767.9px){
+  .hero-section .primary-btn{
+    width: auto;
+    padding: 14px;
+  }
+}
+@media (max-width : 575.9px){
+  .contactWrapper .btnWrapper{
+    flex-direction: column;
+  }
+  .card{
+    width: 100%;
   }
 }

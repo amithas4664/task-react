@@ -1,23 +1,42 @@
-import logo from './logo.svg';
+import { Card, Col, Space , Row , Layout } from 'antd';
 import './App.css';
+import CardWrapper from './components/cardWrapper'
+import HeroSection from './components/HeroSection';
+import Contribution from './components/Contribution';
+import Contact from './components/Contact';
+import FooterComp from './components/FooterComp';
+import CloseBtn from './components/closeBtn';
+
+const { Content  , Footer} = Layout;
 
 function App() {
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+         <Layout style={{backgroundColor : "#000"}}>
+            <Content>
+            <CloseBtn/>
+            <Space direction="vertical" size="large"  >
+            <Row>
+                <HeroSection/>
+            </Row>
+            <Row>
+              <CardWrapper />
+            </Row>
+            <Row>
+                <Contribution />
+            </Row>
+            <Row>
+               <Contact />
+            </Row>
+            </Space>
+            <Footer>
+               <FooterComp />
+            </Footer>
+            </Content>
+           
+         </Layout>
+     
     </div>
   );
 }
